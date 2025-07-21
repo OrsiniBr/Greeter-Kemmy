@@ -73,9 +73,11 @@ function App() {
 
       <div className="flex flex-row mt-4 gap-3">
         <button onClick={handleGet}>Get Message</button>
-        <h1 className="text-3xl font-bold text-center text-blue-600">
-          {currentMessage}
-        </h1>
+        <div className="p-2 bg-[#f7ad4e] rounded-lg min-w-40">
+          <h1 className="text-3xl font-bold text-center">
+            {currentMessage}
+          </h1>
+        </div>
       </div>
     </main>
   );
