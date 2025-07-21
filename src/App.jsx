@@ -1,3 +1,4 @@
+import "tailwindcss";
 import { useState } from "react";
 import abi from "./abi.json";
 import { ethers } from "ethers";
@@ -48,6 +49,11 @@ function App() {
         onChange={(e) => setText(e.target.value)}
       />
       <button onClick={handleSet}>Set Message</button>
+
+      {/* <div className="flex flex-row ">
+        <button>Get Message</button>
+        <h1>message</h1>
+      </div> */}
     </div>
   );
 }
