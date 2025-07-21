@@ -29,6 +29,8 @@ function App() {
         const tx = await contract.setMessage(text);
         const txReceipt = await tx.wait();
         console.log("Transaction successful:", txReceipt);
+        setText(text); // Clear input after setting message
+        alert("Message set successfully!");
       } else {
         console.error(
           "MetaMask not found. Please install MetaMask to use this application."
